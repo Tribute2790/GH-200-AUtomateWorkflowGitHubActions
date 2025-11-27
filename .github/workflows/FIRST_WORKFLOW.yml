@@ -6,7 +6,7 @@ name: First Workflow
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-  workflow_dispatch:
+  workflow_dispatch: #manual
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Hello World
         run: echo Hello, world!
+      - name: Event Name
+        run: echo "Event name: ${{github.event_name}}"
 
   echo-goodbye:
     needs: Hello-job
