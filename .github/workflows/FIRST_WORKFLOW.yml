@@ -23,7 +23,7 @@ jobs:
       - name: Say Goodbye
         run: echo Goodbye!
       - name: Multi-Line bash
-        run: 
+        run: |
           echo "i am"
           echo "multi-line"
           echo "script"
