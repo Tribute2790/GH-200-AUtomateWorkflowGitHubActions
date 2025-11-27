@@ -24,6 +24,6 @@ jobs:
         run: echo Goodbye!
       - name: Multi-Line bash
         run: 
-          echo "i am
+          echo "i am"
           echo "multi-line"
           echo "script"
