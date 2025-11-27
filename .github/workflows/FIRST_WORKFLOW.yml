@@ -17,7 +17,7 @@ jobs:
       - name: Hello World
         run: echo Hello, world!
       - name: Event Name
-        run: echo "Event name: ${{github.event_name}}"
+        run: echo "Event name :${{github.event_name}}"
 
   echo-goodbye:
     needs: Hello-job
