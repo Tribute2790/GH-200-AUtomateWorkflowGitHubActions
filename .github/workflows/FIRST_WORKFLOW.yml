@@ -33,9 +33,9 @@ jobs:
           echo "script"
 
   windows-echo:
-    if: github.event_name == 'workflow_dispatch"
-    runs-on: windows-latest
-    steps:
-      - name: Show OS 
-        shell: bash
-        run: echo "The job is running on Windows runner"
+   if: github.event_name == 'workflow_dispatch'
+   runs-on: windows-latest
+   steps:
+     - name : Show OS
+       shell : bash
+       run : echo "The job is running on Windows runner."
